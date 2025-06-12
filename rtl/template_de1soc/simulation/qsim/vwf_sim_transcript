@@ -1,0 +1,329 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga_lite/16.1/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off rc4 -c rc4 --vector_source="C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/Waveform.vwf" --testbench_file="C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Wed Jun 11 21:20:34 2025
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off rc4 -c rc4 --vector_source=C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/Waveform.vwf --testbench_file=C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/Waveform.vwf.vt
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+ design
+Info (201000): Generated Verilog Test Bench File C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/Waveform.vwf.vt for simulation
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 101 warnings
+    Info: Peak virtual memory: 4717 megabytes
+    Info: Processing ended: Wed Jun 11 21:20:35 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/" rc4 -c rc4
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Wed Jun 11 21:20:35 2025
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/ rc4 -c rc4
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file rc4.vo in folder "C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4729 megabytes
+    Info: Processing ended: Wed Jun 11 21:20:36 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/rc4.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga_lite/16.1/modelsim_ase/win32aloem//vsim -c -do rc4.do
+
+Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+
+
+# 10.5b
+
+# do rc4.do
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:20:37 on Jun 11,2025
+# vlog -work work rc4.vo 
+# -- Compiling module ksa
+
+# 
+# Top level modules:
+# 	ksa
+# End time: 21:20:37 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:20:37 on Jun 11,2025
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ksa_vlg_vec_tst
+# 
+# Top level modules:
+# 	ksa_vlg_vec_tst
+# End time: 21:20:37 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ksa_vlg_vec_tst 
+# Start time: 21:20:38 on Jun 11,2025
+# Loading work.ksa_vlg_vec_tst
+# Loading work.ksa
+# Loading altera_ver.dffeas
+# Loading sv_std.std
+# Loading altera_lnsim_ver.generic_m10k
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.common_28nm_ram_block
+# Loading altera_lnsim_ver.common_28nm_ram_register
+# Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
+# ** Warning: (vsim-3017) Waveform.vwf.vt(46): [TFMPC] - Too few port connections. Expected 14, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /ksa_vlg_vec_tst/i1 File: rc4.vo
+# ** Warning: (vsim-3722) Waveform.vwf.vt(46): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(46): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(46): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(46): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: (vsim-3017) rc4.vo(1751): [TFMPC] - Too few port connections. Expected 21, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /ksa_vlg_vec_tst/i1/altera_internal_jtag File: nofile
+# ** Warning: (vsim-3722) rc4.vo(1751): [TFMPC] - Missing connection for port 'ntrst'.
+# ** Warning: (vsim-3722) rc4.vo(1751): [TFMPC] - Missing connection for port 'corectl'.
+# ** Warning: (vsim-3722) rc4.vo(1751): [TFMPC] - Missing connection for port 'ntdopinena'.
+# ** Warning: (vsim-3722) rc4.vo(1751): [TFMPC] - Missing connection for port 'tckcore'.
+# ** Warning: (vsim-3722) rc4.vo(1751): [TFMPC] - Missing connection for port 'tdicore'.
+# ** Warning: (vsim-3722) rc4.vo(1751): [TFMPC] - Missing connection for port 'tmscore'.
+# ** Warning: (vsim-3722) rc4.vo(1751): [TFMPC] - Missing connection for port 'tdocore'.
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#23
+
+# ** Note: $finish    : Waveform.vwf.vt(61)
+#    Time: 1 us  Iteration: 0  Instance: /ksa_vlg_vec_tst
+# End time: 21:20:38 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 13
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/Waveform.vwf...
+
+Reading C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/rc4.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: addr[7] - signal not found in VCD.
+
+Warning: addr[6] - signal not found in VCD.
+
+Warning: addr[5] - signal not found in VCD.
+
+Warning: addr[4] - signal not found in VCD.
+
+Warning: addr[3] - signal not found in VCD.
+
+Warning: addr[2] - signal not found in VCD.
+
+Warning: addr[1] - signal not found in VCD.
+
+Warning: addr[0] - signal not found in VCD.
+
+Warning: i[7] - signal not found in VCD.
+
+Warning: i[6] - signal not found in VCD.
+
+Warning: i[5] - signal not found in VCD.
+
+Warning: i[4] - signal not found in VCD.
+
+Warning: i[3] - signal not found in VCD.
+
+Warning: i[2] - signal not found in VCD.
+
+Warning: i[1] - signal not found in VCD.
+
+Warning: i[0] - signal not found in VCD.
+
+Warning: i_data[7] - signal not found in VCD.
+
+Warning: i_data[6] - signal not found in VCD.
+
+Warning: i_data[5] - signal not found in VCD.
+
+Warning: i_data[4] - signal not found in VCD.
+
+Warning: i_data[3] - signal not found in VCD.
+
+Warning: i_data[2] - signal not found in VCD.
+
+Warning: i_data[1] - signal not found in VCD.
+
+Warning: i_data[0] - signal not found in VCD.
+
+Warning: imod[7] - signal not found in VCD.
+
+Warning: imod[6] - signal not found in VCD.
+
+Warning: imod[5] - signal not found in VCD.
+
+Warning: imod[4] - signal not found in VCD.
+
+Warning: imod[3] - signal not found in VCD.
+
+Warning: imod[2] - signal not found in VCD.
+
+Warning: imod[1] - signal not found in VCD.
+
+Warning: imod[0] - signal not found in VCD.
+
+Warning: j[7] - signal not found in VCD.
+
+Warning: j[6] - signal not found in VCD.
+
+Warning: j[5] - signal not found in VCD.
+
+Warning: j[4] - signal not found in VCD.
+
+Warning: j[3] - signal not found in VCD.
+
+Warning: j[2] - signal not found in VCD.
+
+Warning: j[1] - signal not found in VCD.
+
+Warning: j[0] - signal not found in VCD.
+
+Warning: j_data[7] - signal not found in VCD.
+
+Warning: j_data[6] - signal not found in VCD.
+
+Warning: j_data[5] - signal not found in VCD.
+
+Warning: j_data[4] - signal not found in VCD.
+
+Warning: j_data[3] - signal not found in VCD.
+
+Warning: j_data[2] - signal not found in VCD.
+
+Warning: j_data[1] - signal not found in VCD.
+
+Warning: j_data[0] - signal not found in VCD.
+
+Warning: state[5] - signal not found in VCD.
+
+Warning: state[4] - signal not found in VCD.
+
+Warning: state[3] - signal not found in VCD.
+
+Warning: state[2] - signal not found in VCD.
+
+Warning: state[1] - signal not found in VCD.
+
+Warning: state[0] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[23] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[22] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[21] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[20] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[19] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[18] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[17] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[16] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[15] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[14] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[13] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[12] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[11] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[10] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[9] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[8] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[7] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[6] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[5] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[4] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[3] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[2] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[1] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|Secret_Key[0] - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|wren - signal not found in VCD.
+
+Warning: FSM_Shuffler:FSM_Shuffle|rst - signal not found in VCD.
+
+Warning: Shuffle_A_Start - signal not found in VCD.
+
+Warning: Shuffle_A_Finish - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/simulation/qsim/rc4_20250611212038.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.
