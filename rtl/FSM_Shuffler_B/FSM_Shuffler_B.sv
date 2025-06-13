@@ -95,6 +95,15 @@ module FSM_Shuffler_B(
             case(state)
                 IDLE:begin 
                     if (Shuffle_B_Start) state <= START;
+                    addr_S<= 8'b0;
+                    addr_C <= 8'b0;
+                    addr_D <= 8'b0;
+                    i <= 8'b0;
+                    j <= 8'b0;
+                    k <= 8'b0;
+                    i_data <= 8'b0;
+                    j_data <= 8'b0;
+                    f <= 8'b0;
                 end
 
                 START:begin

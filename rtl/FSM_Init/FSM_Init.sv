@@ -2,6 +2,7 @@
 module FSM_Init (
     input  logic CLOCK_50,        // Clock pin
     input  logic rst, In_Start,             // push button switches
+    input logic Finish_ack,
     output logic  Init_Finish,
     output logic [7:0] Address,
     output logic wren
@@ -29,8 +30,10 @@ module FSM_Init (
         end
         else begin
             case(state)
-                IDLE: 
+                IDLE: begin
                     if (In_Start) state <= START;
+                    addr<= 8'b0;
+						  end
 
                 START:
                     state <= SEND_DATA;
@@ -47,7 +50,10 @@ module FSM_Init (
                     if (addr ==  8'd255)state <=DONE; // wait for on eclock cycle (wait for finish when task 2 iplemented TODO) 
                     else state <= INC_ADDR;
               
-                DONE: state <=DONE;
+                DONE:begin
+                    if (Finish_ack) state <=IDLE;
+                    else state <=DONE;
+                end
                 
                 default: state<= IDLE;
             endcase

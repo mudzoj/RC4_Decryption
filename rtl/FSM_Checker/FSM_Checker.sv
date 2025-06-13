@@ -31,9 +31,10 @@ module FSM_Checker (
         end
         else begin
             case(state)
-                IDLE: 
+                IDLE: begin
+                    addr<= 8'b0;
                     if (Checker_Start) state <= START;
-
+                end
                 START:
                     state <= CHECK_DATA;
 

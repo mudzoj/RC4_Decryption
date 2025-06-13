@@ -22,12 +22,33 @@ module ksa (
     logic Decrypt_done;
     logic [2:0] Mem_sel;
 
+
+    logic [23:0] Secret_Key_Instance;
+    logic Check_Ack;
+    logic Control_Start;
+    logic Crack_Start;
+    
+    FSM_Get_Key 
+	Get_Next_Secret_Key(
+        .clk(clk),
+        .rst(reset_n),
+        .Crack_Start(1'b1),
+        .Secret_Key(Secret_Key_Instance),
+        .Key_Valid(Key_Valid),
+        .Checker_Finish(Decrypt_done),
+        .Check_Ack(Check_Ack),
+        .Control_Start(Control_Start),
+        .LEDR(LEDR)
+    );
+
+    logic Key_Valid;
     FSM_Controller
     FSM_ksa_Controller(
     .clk(clk), 
+    .Controller_Start(Control_Start), .Finish_ack(Check_Ack),
     .Init_Finish(Init_Finish),.Shuffle_A_Finish(Shuffle_A_Finish),.Shuffle_B_Finish(Shuffle_B_Finish),.Decrypt_Finish(Checker_Finish),
     .Init_Start(Init_Start),.Shuffle_A_Start(Shuffle_A_Start),.Shuffle_B_Start(Shuffle_B_Start),.Decrypt_Start(Decrypt_Start),
-    .Decrypt_done(Decrypt_done), .Decrypt_Valid(Decrypt_Valid),.Key_Valid(),
+    .Decrypt_done(Decrypt_done), .Decrypt_Valid(Decrypt_Valid),.Key_Valid(Key_Valid),
     .Mem_sel(Mem_sel),
     .rst(reset_n));
 
@@ -41,6 +62,7 @@ module ksa (
         .rst(reset_n),
         .In_Start(Init_Start),             
         .Init_Finish(Init_Finish),
+        .Finish_ack(Shuffle_A_Start),
         .Address(Init_Address),
         .wren(Init_wren)
     );
@@ -55,7 +77,7 @@ module ksa (
     FSM_Shuffle(
     .clk(clk),
     .rst(reset_n),
-    .Secret_Key(SW[9:0]), 
+    .Secret_Key(Secret_Key_Instance), 
     .In_Start(Shuffle_A_Start),
     .Finish_ack(Shuffle_B_Start),
     .q(q_S),
@@ -170,8 +192,9 @@ module ksa (
 //   Checker (task 3) 
 //
 //========================================================================================================================
+    
     logic Checker_Finish, Decrypt_Valid;
-     logic [7:0] Check_Address;
+    logic [7:0] Check_Address;
     FSM_Checker
     FSM_Checker (
     .CLOCK_50(clk),        // Clock pin
@@ -186,7 +209,32 @@ module ksa (
     SevenSegmentDisplayDecoder
     decoder0 (
         .ssOut(HEX0),
-        .nIn  (SW[3:0])
+        .nIn  (Secret_Key_Instance[3:0])
+    );
+    SevenSegmentDisplayDecoder
+    decoder1 (
+        .ssOut(HEX1),
+        .nIn  (Secret_Key_Instance[7:4])
+    );
+    SevenSegmentDisplayDecoder
+    decoder2 (
+        .ssOut(HEX2),
+        .nIn  (Secret_Key_Instance[11:8])
+    );
+    SevenSegmentDisplayDecoder
+    decoder3 (
+        .ssOut(HEX3),
+        .nIn  (Secret_Key_Instance[15:12])
+    );
+    SevenSegmentDisplayDecoder
+    decoder4 (
+        .ssOut(HEX4),
+        .nIn  (Secret_Key_Instance[19:16])
+    );
+    SevenSegmentDisplayDecoder
+    decoder5 (
+        .ssOut(HEX5),
+        .nIn  (Secret_Key_Instance[23:20])
     );
 endmodule 
 `default_nettype wire

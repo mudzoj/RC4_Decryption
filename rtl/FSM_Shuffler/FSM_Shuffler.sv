@@ -67,7 +67,14 @@ module FSM_Shuffler(
             case(state)
                 IDLE:begin 
                     if (In_Start) state <= START;
-                end
+                    addr<= 8'b0;
+                    data <= 8'b0;
+                    i <= 8'b0;
+                    j <= 8'b0;
+                    i_data <= 8'b0;
+                    j_data <= 8'b0;
+                    imod <= 2'b0;
+                        end
 
                 START:begin
                     state <= SEND_ADDR_I;
