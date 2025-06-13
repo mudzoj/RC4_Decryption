@@ -5,6 +5,7 @@ module FSM_Shuffler_B(
     input logic rst,
 
     input logic Shuffle_B_Start,
+    input logic Finish_ack,
 
     input logic [7:0] q_S, // working memory
     output logic [7:0] data_S,
@@ -188,7 +189,8 @@ module FSM_Shuffler_B(
                         state <= INC_K;
                 end
                 DONE:begin
-                    state <=DONE;
+                    if (Finish_ack) state <=IDLE;
+                    else state <=DONE;
                 end
                 
                 

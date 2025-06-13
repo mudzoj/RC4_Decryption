@@ -25,9 +25,9 @@ module ksa (
     FSM_Controller
     FSM_ksa_Controller(
     .clk(clk), 
-    .Init_Finish(Init_Finish),.Shuffle_A_Finish(Shuffle_A_Finish),.Shuffle_B_Finish(Shuffle_B_Finish),.Decrypt_Finish(),
+    .Init_Finish(Init_Finish),.Shuffle_A_Finish(Shuffle_A_Finish),.Shuffle_B_Finish(Shuffle_B_Finish),.Decrypt_Finish(Checker_Finish),
     .Init_Start(Init_Start),.Shuffle_A_Start(Shuffle_A_Start),.Shuffle_B_Start(Shuffle_B_Start),.Decrypt_Start(Decrypt_Start),
-    .Decrypt_done(Decrypt_done),
+    .Decrypt_done(Decrypt_done), .Decrypt_Valid(Decrypt_Valid),.Key_Valid(),
     .Mem_sel(Mem_sel),
     .rst(reset_n));
 
@@ -57,6 +57,7 @@ module ksa (
     .rst(reset_n),
     .Secret_Key(SW[9:0]), 
     .In_Start(Shuffle_A_Start),
+    .Finish_ack(Shuffle_B_Start),
     .q(q_S),
     .data(shuffleA_data),
     .Address(shuffleA_Address),
@@ -124,6 +125,7 @@ module ksa (
     .rst(reset_n),
 
     .Shuffle_B_Start(Shuffle_B_Start),
+    .Finish_ack(Decrypt_Start),
 
     .q_S(q_S), // working memory
     .data_S(shuffleB_S_Data),
@@ -142,14 +144,6 @@ module ksa (
     );
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     logic [7:0] q_C_mem;
     logic [4:0] C_selected_Address;
     
@@ -159,19 +153,35 @@ module ksa (
 	.clock(clk),
 	.q(q_C_mem));
     
-        
-    
             
-    logic q_D,d_wren;
+    logic [7:0]q_D;
+    logic d_wren;
     d_memory
     d_memory_msg (
-        .address((Mem_sel==3'b101)?shuffleB_D_Address: 8'b0),//TODO replace value
+        .address((Mem_sel==3'b101)?shuffleB_D_Address: Check_Address),//TODO replace value
         .clock(clk),
         .data((Mem_sel==3'b101)?shuffleB_D_Data: 8'b0),//TODO replace value
-        .wren((Mem_sel==3'b101)?d_wren:1'b0), //TODO replace value
+        .wren((Mem_sel==3'b101)?d_wren: 1'b0), //TODO replace value
         .q(q_D)
     );
 
+//=======================================================================================================================
+//
+//   Checker (task 3) 
+//
+//========================================================================================================================
+    logic Checker_Finish, Decrypt_Valid;
+     logic [7:0] Check_Address;
+    FSM_Checker
+    FSM_Checker (
+    .CLOCK_50(clk),        // Clock pin
+    .rst(reset_n), .Checker_Start(Decrypt_Start),
+    .Finish_ack(Decrypt_done),
+    .q_D(q_D),
+    .Checker_Finish(Checker_Finish),
+    .Address(Check_Address),
+    .Decrypt_Valid(Decrypt_Valid)
+);
 
     SevenSegmentDisplayDecoder
     decoder0 (

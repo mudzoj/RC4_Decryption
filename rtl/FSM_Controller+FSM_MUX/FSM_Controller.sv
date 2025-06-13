@@ -2,8 +2,8 @@
 
 module FSM_Controller(
     input logic clk, 
-    input logic Init_Finish,Shuffle_A_Finish,Shuffle_B_Finish,Decrypt_Finish,
-    output logic Init_Start,Shuffle_A_Start,Shuffle_B_Start,Decrypt_Start, Decrypt_done,
+    input logic Init_Finish,Shuffle_A_Finish,Shuffle_B_Finish,Decrypt_Finish, Decrypt_Valid,
+    output logic Init_Start,Shuffle_A_Start,Shuffle_B_Start,Decrypt_Start, Decrypt_done, Key_Valid,
     output logic [2:0] Mem_sel,
     input logic rst
 );
@@ -28,7 +28,10 @@ module FSM_Controller(
     assign Decrypt_done = state[7];
 
 	always_ff@(posedge clk) begin
-        if (rst) state<=IDLE;
+        if (rst) begin 
+            state<=IDLE;
+            Key_Valid<=1'b0;
+        end
         else case(state)
         IDLE: state<= INIT_START;
 
@@ -45,7 +48,10 @@ module FSM_Controller(
                     else state<= SHUFFLEB_WAIT; 
 
         DECRYPT_START: state<= DECRYPT_WAIT; 
-        DECRYPT_WAIT: if (Decrypt_Finish) state<= DONE;
+        DECRYPT_WAIT: if (Decrypt_Finish) begin
+                    state<= DONE;
+                    Key_Valid<=Decrypt_Valid;
+        end
                     else state<= DECRYPT_WAIT;  
 
         DONE: state<=DONE;

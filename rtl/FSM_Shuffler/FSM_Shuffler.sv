@@ -7,6 +7,7 @@ module FSM_Shuffler(
     input logic [23:0] Secret_Key,
     input logic In_Start,
     input logic [7:0] q,
+    input logic Finish_ack,
 
     output logic [7:0] data,
     output logic [7:0] Address,
@@ -145,7 +146,8 @@ module FSM_Shuffler(
                 // end
 
                 DONE:begin
-                    state <=DONE;
+                    if (Finish_ack) state <=IDLE;
+                    else state <=DONE;
                 end
                 
                 
