@@ -40,11 +40,11 @@ module FSM_Controller(
         SHUFFLEA_WAIT: if (Shuffle_A_Finish) state<= SHUFFLEB_START;
                     else state<= SHUFFLEA_WAIT;
 
-        SHUFFLEB_START: state<=SHUFFLEB_START;
+        SHUFFLEB_START: state<=SHUFFLEB_WAIT;
         SHUFFLEB_WAIT: if (Shuffle_B_Finish) state<= DECRYPT_START;
                     else state<= SHUFFLEB_WAIT; 
 
-        DECRYPT_START: state<= DECRYPT_START; 
+        DECRYPT_START: state<= DECRYPT_WAIT; 
         DECRYPT_WAIT: if (Decrypt_Finish) state<= DONE;
                     else state<= DECRYPT_WAIT;  
 
