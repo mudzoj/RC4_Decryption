@@ -677,13 +677,12 @@
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="E1C191CF" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/11 21:28:55  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="E1C191CF" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/11 21:28:55  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">'FSM_Shuffler:FSM_Shuffle|In_Start' == rising edge
             <power_up enabled="yes">
-            </power_up>
-            <op_node/>
+            </power_up><op_node/>
           </level>
         </events>
         <storage_qualifier_events>
@@ -1772,12 +1771,13 @@
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="257B0E8B" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/13 15:44:41  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="257B0E8B" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/13 15:44:41  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">'FSM_Shuffler_B:FSM_Shuffle_B|Shuffle_B_Start' == rising edge
             <power_up enabled="yes">
-            </power_up><op_node/>
+            </power_up>
+            <op_node/>
           </level>
           <custom_flow_control>
             <runtime_configurable comparison_operator="yes" counter_action="no" flag_action="no" logical_operator="yes" numerical_value="yes" state_transition="yes"/>
@@ -2274,12 +2274,13 @@ trigger;]]>
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="AC254873" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/13 15:44:41  #3" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="AC254873" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/13 15:44:41  #3" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">'FSM_Checker:FSM_Checker|Checker_Start' == rising edge
             <power_up enabled="yes">
-            </power_up><op_node/>
+            </power_up>
+            <op_node/>
           </level>
         </events>
         <storage_qualifier_events>
@@ -2868,12 +2869,13 @@ trigger;]]>
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="DCFADF95" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/13 15:33:38  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="DCFADF95" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2025/06/13 15:33:38  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">'FSM_Checker:FSM_Checker|Checker_Finish' == rising edge &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[0]' == high &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[10]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[11]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[12]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[13]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[14]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[15]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[16]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[17]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[18]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[19]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[1]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[20]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[21]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[22]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[23]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[2]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[3]' == high &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[4]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[5]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[6]' == high &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[7]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[8]' == low &amp;&amp; 'FSM_Get_Key:Get_Next_Secret_Key|Secret_Key[9]' == high
             <power_up enabled="yes">
-            </power_up><op_node/>
+            </power_up>
+            <op_node/>
           </level>
         </events>
         <storage_qualifier_events>

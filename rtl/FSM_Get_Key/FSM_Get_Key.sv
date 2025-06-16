@@ -1,5 +1,8 @@
 `default_nettype none
-module FSM_Get_Key(
+module FSM_Get_Key#(
+parameter BEGIN_SEARCH = 22'd0,
+parameter END_SEARCH = 22'd4194303//h3FFFFF
+)(
     input logic clk,
     input logic rst, Crack_Start,
     output logic [23:0] Secret_Key,
@@ -7,7 +10,8 @@ module FSM_Get_Key(
     input logic Checker_Finish,
     output logic Check_Ack,
     output logic Control_Start,
-    output logic [9:0] LEDR
+    output logic Valid_Key_Found,
+    output logic [1:0] LEDR
     );
 
     enum logic[5:0]{
@@ -18,23 +22,24 @@ module FSM_Get_Key(
         SEND_KEY=        {4'd3, 1'b1, 1'b0},//0011 1 0  :0E
         WAIT_FOR_RESULT= {4'd4, 1'b0, 1'b0},//0100 0 0  :10
         TRY_NEXT_KEY =   {4'd5, 1'b0, 1'b0},//0101 0 0  :14
-        DONE_VALID =     {4'd6, 1'b0, 1'b0},//0110 0 0  :18
+        DONE_VALID =     {4'd14, 1'b0, 1'b0},//1110 0 0  :18
         DONE_INVALID =   {4'd7, 1'b0, 1'b0} //0111 0 0  :1C
     } state;
 
 
-    logic [21:0] Secret_Key_Instance = 22'h0;
-    logic [9:0] LED = 10'b0;
+    logic [21:0] Secret_Key_Instance;// = 22'h0;
+    logic [1:0] LED = 2'b0;
 
     assign Secret_Key = {2'b0, Secret_Key_Instance};  //2 MSB's will be 0
     assign Check_Ack = state[0];
     assign Control_Start = state[1];
+    assign Valid_Key_Found = state[5];
     assign LEDR = LED;
 
    always_ff @(posedge clk or posedge rst) begin
         if (rst)begin
-            LED <= 10'b0;
-            Secret_Key_Instance<= 22'h0;
+            LED <= 2'b0;
+            Secret_Key_Instance<= BEGIN_SEARCH;
             state<=IDLE;
             
         end
@@ -44,7 +49,7 @@ module FSM_Get_Key(
                     if (Crack_Start) state <= START;
 
                 START:begin         //Control Start is HIGH
-                    Secret_Key_Instance <= 22'h0;
+                    Secret_Key_Instance <= BEGIN_SEARCH;
                     state <= SEND_KEY;
 						  end
 
@@ -62,18 +67,18 @@ module FSM_Get_Key(
                         else state <= TRY_NEXT_KEY;
                     
                 TRY_NEXT_KEY:begin
-                    if (Secret_Key_Instance ==  22'h3FFFFF)state <= DONE_INVALID; 
+                    if (Secret_Key_Instance ==  END_SEARCH)state <= DONE_INVALID; 
                     else state <= NEXT_KEY;
                 end
 
                 DONE_VALID:begin
-                    LED <= 10'b1;
+                    LED <= 2'b01;
                     state <= DONE_VALID;
                 end
 
                 
                 DONE_INVALID:begin
-                    LED <= 10'b10;
+                    LED <= 2'b10;
                     state <= DONE_INVALID;
                 end
 
