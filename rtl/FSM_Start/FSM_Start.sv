@@ -1,10 +1,10 @@
 `default_nettype none
 
 module FSM_Start(
-    input logic clk,
-    input logic rst,
+    input wire clk,
+    input wire rst,
 
-    output logic start
+    output wire start
 );
 
     enum logic[2:0]{
