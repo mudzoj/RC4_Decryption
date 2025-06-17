@@ -20,6 +20,13 @@ module ksa (
     assign reset_n = ~KEY[3]; //active high reset
     assign LEDR = {'0,LEDR_cracker4,LEDR_cracker3,LEDR_cracker2,LEDR_cracker1};
     
+    logic start_pulse;
+    FSM_Start
+    Send_Start_Pulse(
+    .clk(clk),
+    .rst(reset_n),
+    .start(start_pulse)
+);
     logic [1:0] LEDR_cracker1;
     logic Valid_Key_Found_cracker1;
     logic [23:0] Secret_Key_Cracker_1;
@@ -29,6 +36,7 @@ module ksa (
     )Cracking_RC4_Core1(
     .clk(clk),        // Clock pin
     .reset_n(reset_n | Valid_Key_Found_rst[0]),
+    .start_pulse(start_pulse),
     .LEDR(LEDR_cracker1),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker1),
     .Secret_Key(Secret_Key_Cracker_1)
@@ -44,6 +52,7 @@ module ksa (
     )Cracking_RC4_Core2(
     .clk(clk),        // Clock pin
     .reset_n(reset_n | Valid_Key_Found_rst[1]),
+    .start_pulse(start_pulse),
     .LEDR(LEDR_cracker2),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker2),
     .Secret_Key(Secret_Key_Cracker_2)
@@ -59,6 +68,7 @@ module ksa (
     )Cracking_RC4_Core3(
     .clk(clk),        // Clock pin
     .reset_n(reset_n | Valid_Key_Found_rst[2]),
+    .start_pulse(start_pulse),
     .LEDR(LEDR_cracker3),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker3),
     .Secret_Key(Secret_Key_Cracker_3)
@@ -74,6 +84,7 @@ module ksa (
     )Cracking_RC4_Core4(
     .clk(clk),        // Clock pin
     .reset_n(reset_n  | Valid_Key_Found_rst[3]),
+    .start_pulse(start_pulse),
     .LEDR(LEDR_cracker4),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker4),
     .Secret_Key(Secret_Key_Cracker_4)

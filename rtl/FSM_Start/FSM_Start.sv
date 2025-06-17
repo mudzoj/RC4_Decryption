@@ -24,6 +24,7 @@ module FSM_Start(
                 
                 IDLE: state<= SEND_START;
                 SEND_START: state<= IDLE_START;
+                IDLE_START: state<= IDLE_START;
                 default: state<=IDLE;
         
         endcase 

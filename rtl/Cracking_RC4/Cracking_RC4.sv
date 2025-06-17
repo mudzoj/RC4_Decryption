@@ -6,7 +6,7 @@ parameter END_SEARCH = 22'd4194303//h3FFFFF
 )(
     input  logic       clk,        // Clock pin
     output logic [1:0]  LEDR,            // red lights
-    input logic reset_n,
+    input logic reset_n, start_pulse,
     output logic Is_Valid_Key_Found,
     output logic [23:0] Secret_Key
 );
@@ -18,13 +18,6 @@ parameter END_SEARCH = 22'd4194303//h3FFFFF
     logic [2:0] Mem_sel;
 
 
-    logic start_pulse;
-    FSM_Start
-    Send_Start_Pulse(
-    .clk(clk),
-    .rst(reset_n),
-    .start(start_pulse)
-);
 
     logic [23:0] Secret_Key_Instance;
     logic Check_Ack;

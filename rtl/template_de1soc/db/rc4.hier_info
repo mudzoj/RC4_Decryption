@@ -1,9 +1,9 @@
 |ksa
-CLOCK_50 => clk.IN5
+CLOCK_50 => clk.IN6
 KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
-KEY[3] => reset_n.IN1
+KEY[3] => reset_n.IN2
 SW[0] => ~NO_FANOUT~
 SW[1] => ~NO_FANOUT~
 SW[2] => ~NO_FANOUT~
@@ -68,11 +68,22 @@ HEX5[5] <= SevenSegmentDisplayDecoder:decoder5.ssOut
 HEX5[6] <= SevenSegmentDisplayDecoder:decoder5.ssOut
 
 
+|ksa|FSM_Start:Send_Start_Pulse
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+rst => state[0].ACLR
+rst => state[1].ACLR
+rst => state[2].ACLR
+start <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
 |ksa|Cracking_RC4:Cracking_RC4_Core1
-clk => clk.IN10
+clk => clk.IN9
 LEDR[0] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
 LEDR[1] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
-reset_n => reset_n.IN7
+reset_n => reset_n.IN6
+start_pulse => start_pulse.IN1
 Is_Valid_Key_Found <= FSM_Get_Key:Get_Next_Secret_Key.Valid_Key_Found
 Secret_Key[0] <= Secret_Key_Instance[0].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[1] <= Secret_Key_Instance[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -98,16 +109,6 @@ Secret_Key[20] <= Secret_Key_Instance[20].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[21] <= Secret_Key_Instance[21].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[22] <= Secret_Key_Instance[22].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[23] <= Secret_Key_Instance[23].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ksa|Cracking_RC4:Cracking_RC4_Core1|FSM_Start:Send_Start_Pulse
-clk => state[0].CLK
-clk => state[1].CLK
-clk => state[2].CLK
-rst => state[0].ACLR
-rst => state[1].ACLR
-rst => state[2].ACLR
-start <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ksa|Cracking_RC4:Cracking_RC4_Core1|FSM_Get_Key:Get_Next_Secret_Key
@@ -2821,10 +2822,11 @@ Decrypt_Valid <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ksa|Cracking_RC4:Cracking_RC4_Core2
-clk => clk.IN10
+clk => clk.IN9
 LEDR[0] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
 LEDR[1] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
-reset_n => reset_n.IN7
+reset_n => reset_n.IN6
+start_pulse => start_pulse.IN1
 Is_Valid_Key_Found <= FSM_Get_Key:Get_Next_Secret_Key.Valid_Key_Found
 Secret_Key[0] <= Secret_Key_Instance[0].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[1] <= Secret_Key_Instance[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -2850,16 +2852,6 @@ Secret_Key[20] <= Secret_Key_Instance[20].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[21] <= Secret_Key_Instance[21].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[22] <= Secret_Key_Instance[22].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[23] <= Secret_Key_Instance[23].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ksa|Cracking_RC4:Cracking_RC4_Core2|FSM_Start:Send_Start_Pulse
-clk => state[0].CLK
-clk => state[1].CLK
-clk => state[2].CLK
-rst => state[0].ACLR
-rst => state[1].ACLR
-rst => state[2].ACLR
-start <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ksa|Cracking_RC4:Cracking_RC4_Core2|FSM_Get_Key:Get_Next_Secret_Key
@@ -5573,10 +5565,11 @@ Decrypt_Valid <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ksa|Cracking_RC4:Cracking_RC4_Core3
-clk => clk.IN10
+clk => clk.IN9
 LEDR[0] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
 LEDR[1] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
-reset_n => reset_n.IN7
+reset_n => reset_n.IN6
+start_pulse => start_pulse.IN1
 Is_Valid_Key_Found <= FSM_Get_Key:Get_Next_Secret_Key.Valid_Key_Found
 Secret_Key[0] <= Secret_Key_Instance[0].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[1] <= Secret_Key_Instance[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -5602,16 +5595,6 @@ Secret_Key[20] <= Secret_Key_Instance[20].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[21] <= Secret_Key_Instance[21].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[22] <= Secret_Key_Instance[22].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[23] <= Secret_Key_Instance[23].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ksa|Cracking_RC4:Cracking_RC4_Core3|FSM_Start:Send_Start_Pulse
-clk => state[0].CLK
-clk => state[1].CLK
-clk => state[2].CLK
-rst => state[0].ACLR
-rst => state[1].ACLR
-rst => state[2].ACLR
-start <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ksa|Cracking_RC4:Cracking_RC4_Core3|FSM_Get_Key:Get_Next_Secret_Key
@@ -8325,10 +8308,11 @@ Decrypt_Valid <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ksa|Cracking_RC4:Cracking_RC4_Core4
-clk => clk.IN10
+clk => clk.IN9
 LEDR[0] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
 LEDR[1] <= FSM_Get_Key:Get_Next_Secret_Key.LEDR
-reset_n => reset_n.IN7
+reset_n => reset_n.IN6
+start_pulse => start_pulse.IN1
 Is_Valid_Key_Found <= FSM_Get_Key:Get_Next_Secret_Key.Valid_Key_Found
 Secret_Key[0] <= Secret_Key_Instance[0].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[1] <= Secret_Key_Instance[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -8354,16 +8338,6 @@ Secret_Key[20] <= Secret_Key_Instance[20].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[21] <= Secret_Key_Instance[21].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[22] <= Secret_Key_Instance[22].DB_MAX_OUTPUT_PORT_TYPE
 Secret_Key[23] <= Secret_Key_Instance[23].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ksa|Cracking_RC4:Cracking_RC4_Core4|FSM_Start:Send_Start_Pulse
-clk => state[0].CLK
-clk => state[1].CLK
-clk => state[2].CLK
-rst => state[0].ACLR
-rst => state[1].ACLR
-rst => state[2].ACLR
-start <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ksa|Cracking_RC4:Cracking_RC4_Core4|FSM_Get_Key:Get_Next_Secret_Key
