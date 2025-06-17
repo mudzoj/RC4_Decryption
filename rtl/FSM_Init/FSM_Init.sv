@@ -13,7 +13,7 @@ module FSM_Init (
         START = {4'd1, 1'b0, 1'b0},
         INC_ADDR = {4'd2, 1'b0, 1'b0},  //-> if overflow done. if not go to SEND_DATA
         SEND_DATA = {4'd3, 1'b0, 1'b1},// wren on 
-        WAIT = {4'd4, 1'b0, 1'b1}, // wait for on eclock cycle (wait for finish when task 2 iplemented TODO) 
+        WAIT = {4'd4, 1'b0, 1'b1}, // wait for on eclock cycle 
         DONE = {4'd5, 1'b1, 1'b0}
     } state;
 
@@ -47,7 +47,7 @@ module FSM_Init (
                     state <= WAIT; // wren on 
 
                 WAIT: 
-                    if (addr ==  8'd255)state <=DONE; // wait for on eclock cycle (wait for finish when task 2 iplemented TODO) 
+                    if (addr ==  8'd255)state <=DONE; // wait for on eclock cycle 
                     else state <= INC_ADDR;
               
                 DONE:begin

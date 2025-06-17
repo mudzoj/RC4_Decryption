@@ -23,19 +23,18 @@ module FSM_Shuffler(
         //READ
         SEND_ADDR_I =   {4'd3, 1'b0, 1'b0},
 
-        WAIT_ADDR_I =   {4'd4, 1'b0, 1'b0}, // TODO TEST
+        WAIT_ADDR_I =   {4'd4, 1'b0, 1'b0},
 
         COMPUTE_J =     {4'd5, 1'b0, 1'b0}, 
         SEND_ADDR_J =   {4'd6, 1'b0, 1'b0},
 
-        WAIT_ADDR_J =   {4'd7, 1'b0, 1'b0}, // TODO TEST
+        WAIT_ADDR_J =   {4'd7, 1'b0, 1'b0}, 
         //WRITE
         SWAP_I =        {4'd8, 1'b0, 1'b0},
         SEND_SWAP_I =   {4'd9, 1'b0, 1'b1},
-        WAIT_SWAP_I =   {4'd10, 1'b0, 1'b1},
         SWAP_J =        {4'd11, 1'b0, 1'b0},
         SEND_SWAP_J =   {4'd12, 1'b0, 1'b1},
-        WAIT_SWAP_J =   {4'd13, 1'b0, 1'b1},
+
         DONE =          {4'd14, 1'b1, 1'b0}
 
 
@@ -125,11 +124,6 @@ module FSM_Shuffler(
                     state <= SWAP_J;
                 end
 
-
-                // WAIT_SWAP_I: begin //wren HIGH, wait a clck cycle TODO take out maybe?
-                //     state <= SWAP_J;
-                // end
-
                 SWAP_J: begin //wren LOW
                     addr <= j;
                     data <= i_data;
@@ -137,20 +131,11 @@ module FSM_Shuffler(
 
                 end
                 SEND_SWAP_J: begin //wren HIGH
-                    // state <= WAIT_SWAP_J;
                     if (i ==  8'd255)
                         state <= DONE;
                     else 
                         state <= INC_I;
                 end
-
-                // WAIT_SWAP_J: begin //wren HIGH, wait a clk cycle TODO take out maybe?
-                //      if (i ==  8'd255)
-                //         state <= DONE;
-                //     else 
-                //         state <= INC_I;
-                   
-                // end
 
                 DONE:begin
                     if (Finish_ack) state <=IDLE;

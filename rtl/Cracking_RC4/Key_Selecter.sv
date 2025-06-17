@@ -25,7 +25,7 @@ module Key_Selecter (
 
   always_comb begin
     // Default: no key found
-    Secret_Key_Selected      = 24'h000000;
+    Secret_Key_Selected      = Secret_Key_Cracker_1;
     Valid_Key_Found_rst = 4'b0;
 
     // Priority encoder: Core1 → Core2 → Core3 → Core4

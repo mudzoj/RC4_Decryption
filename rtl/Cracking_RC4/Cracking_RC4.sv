@@ -18,6 +18,14 @@ parameter END_SEARCH = 22'd4194303//h3FFFFF
     logic [2:0] Mem_sel;
 
 
+    logic start_pulse;
+    FSM_Start
+    Send_Start_Pulse(
+    .clk(clk),
+    .rst(reset_n),
+    .start(start_pulse)
+);
+
     logic [23:0] Secret_Key_Instance;
     logic Check_Ack;
     logic Control_Start;
@@ -30,7 +38,7 @@ parameter END_SEARCH = 22'd4194303//h3FFFFF
   )Get_Next_Secret_Key(
         .clk(clk),
         .rst(reset_n),
-        .Crack_Start(1'b1),
+        .Crack_Start(start_pulse),
         .Secret_Key(Secret_Key_Instance),
         .Key_Valid(Key_Valid),
         .Checker_Finish(Decrypt_done),

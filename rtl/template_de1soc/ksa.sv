@@ -31,8 +31,9 @@ module ksa (
     .reset_n(reset_n | Valid_Key_Found_rst[0]),
     .LEDR(LEDR_cracker1),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker1),
-    .Secret_Key(Secret_Key_Cracker_1),
+    .Secret_Key(Secret_Key_Cracker_1)
     );
+
 
     logic [1:0] LEDR_cracker2;
     logic Valid_Key_Found_cracker2;
@@ -45,8 +46,9 @@ module ksa (
     .reset_n(reset_n | Valid_Key_Found_rst[1]),
     .LEDR(LEDR_cracker2),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker2),
-    .Secret_Key(Secret_Key_Cracker_2),
+    .Secret_Key(Secret_Key_Cracker_2)
     );
+
 
     logic [1:0] LEDR_cracker3;
     logic Valid_Key_Found_cracker3;
@@ -55,12 +57,13 @@ module ksa (
     .BEGIN_SEARCH(22'h200000),
     .END_SEARCH(22'h2FFFFF)//h3FFFFF
     )Cracking_RC4_Core3(
-    .clk(clk | Valid_Key_Found_rst[2]),        // Clock pin
-    .reset_n(reset_n),
+    .clk(clk),        // Clock pin
+    .reset_n(reset_n | Valid_Key_Found_rst[2]),
     .LEDR(LEDR_cracker3),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker3),
-    .Secret_Key(Secret_Key_Cracker_3),
+    .Secret_Key(Secret_Key_Cracker_3)
     );
+
 
     logic [1:0] LEDR_cracker4;
     logic Valid_Key_Found_cracker4;
@@ -69,12 +72,14 @@ module ksa (
     .BEGIN_SEARCH(22'h300000),
     .END_SEARCH(22'h3FFFFF)//h3FFFFF
     )Cracking_RC4_Core4(
-    .clk(clk  | Valid_Key_Found_rst[3]),        // Clock pin
-    .reset_n(reset_n),
+    .clk(clk),        // Clock pin
+    .reset_n(reset_n  | Valid_Key_Found_rst[3]),
     .LEDR(LEDR_cracker4),
     .Is_Valid_Key_Found(Valid_Key_Found_cracker4),
-    .Secret_Key(Secret_Key_Cracker_4),
+    .Secret_Key(Secret_Key_Cracker_4)
     );
+
+
 
     logic [23:0] Secret_Key_Selected;
     logic [3:0] Valid_Key_Found_rst;

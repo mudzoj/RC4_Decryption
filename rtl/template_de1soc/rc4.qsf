@@ -914,6 +914,7 @@ set_global_assignment -name SYNCHRONIZER_IDENTIFICATION AUTO
 set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE Debuging.stp
+set_global_assignment -name SYSTEMVERILOG_FILE ../FSM_Start/FSM_Start.sv
 set_global_assignment -name SDC_FILE timing_constraints.sdc
 set_global_assignment -name QIP_FILE s_memory.qip
 set_global_assignment -name SYSTEMVERILOG_FILE ../FSM_Init/FSM_Init.sv
@@ -930,6 +931,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE ksa.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../FSM_Get_Key/FSM_Get_Key.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../Cracking_RC4/Cracking_RC4.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../Cracking_RC4/Key_Selecter.sv
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/Debuging_auto_stripped.stp
