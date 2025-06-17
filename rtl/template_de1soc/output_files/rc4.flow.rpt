@@ -1,5 +1,5 @@
 Flow report for rc4
-Sun Jun 15 19:26:51 2025
+Tue Jun 17 01:33:16 2025
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Jun 15 19:26:41 2025       ;
+; Flow Status                     ; Successful - Tue Jun 17 01:32:43 2025       ;
 ; Quartus Prime Version           ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                   ; rc4                                         ;
 ; Top-level Entity Name           ; ksa                                         ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/15/2025 19:24:05 ;
+; Start date & time ; 06/17/2025 01:25:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; rc4                 ;
 +-------------------+---------------------+
@@ -82,7 +82,7 @@ agreement for further details.
 ; AUTO_RAM_RECOGNITION                              ; Off                                    ; On                 ; --          ; --         ;
 ; AUTO_ROM_RECOGNITION                              ; Off                                    ; On                 ; --          ; --         ;
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS ; Care                                   ; Auto               ; --          ; --         ;
-; COMPILER_SIGNATURE_ID                             ; 1097971801227.175004064504108          ; --                 ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                             ; 62657544703411.175014875326688         ; --                 ; --          ; --         ;
 ; ENABLE_SIGNALTAP                                  ; On                                     ; --                 ; --          ; --         ;
 ; EXTRACT_VERILOG_STATE_MACHINES                    ; Off                                    ; On                 ; --          ; --         ;
 ; EXTRACT_VHDL_STATE_MACHINES                       ; Off                                    ; On                 ; --          ; --         ;
@@ -120,11 +120,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 5006 MB             ; 00:00:33                           ;
-; Fitter                    ; 00:02:11     ; 1.2                     ; 7935 MB             ; 00:14:54                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4861 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 2.1                     ; 5376 MB             ; 00:00:15                           ;
-; Total                     ; 00:02:43     ; --                      ; --                  ; 00:15:46                           ;
+; Analysis & Synthesis      ; 00:01:03     ; 1.0                     ; 5016 MB             ; 00:01:43                           ;
+; Fitter                    ; 00:05:17     ; 1.2                     ; 7880 MB             ; 00:28:18                           ;
+; Assembler                 ; 00:00:21     ; 1.0                     ; 4856 MB             ; 00:00:15                           ;
+; TimeQuest Timing Analyzer ; 00:00:32     ; 2.0                     ; 5370 MB             ; 00:00:48                           ;
+; Total                     ; 00:07:13     ; --                      ; --                  ; 00:31:04                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -133,10 +133,10 @@ agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; AFZROG           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; AFZROG           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; AFZROG           ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; AFZROG           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; MudsLaptop       ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; MudsLaptop       ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; MudsLaptop       ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; MudsLaptop       ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

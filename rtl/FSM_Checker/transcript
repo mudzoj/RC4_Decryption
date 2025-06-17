@@ -1,0 +1,538 @@
+# Compile of tb_FSM_Controller.v failed with 16 errors.
+# Compile of FSM_Controller.sv failed with 9 errors.
+# 2 compiles, 2 failed with 25 errors.
+# Compile of tb_FSM_Controller.v failed with 16 errors.
+# Compile of FSM_Controller.sv failed with 3 errors.
+# 2 compiles, 2 failed with 19 errors.
+# Compile of tb_FSM_Controller.v was successful.
+# Compile of FSM_Controller.sv failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of tb_FSM_Controller.v was successful.
+# Compile of FSM_Controller.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Controller
+# vsim work.tb_FSM_Controller 
+# Start time: 20:38:04 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Controller
+# Loading work.FSM_Controller
+add wave -position insertpoint  \
+sim:/tb_FSM_Controller/clk \
+sim:/tb_FSM_Controller/Controller_Start \
+sim:/tb_FSM_Controller/Finish_ack \
+sim:/tb_FSM_Controller/Init_Finish \
+sim:/tb_FSM_Controller/Shuffle_A_Finish \
+sim:/tb_FSM_Controller/Shuffle_B_Finish \
+sim:/tb_FSM_Controller/Decrypt_Finish \
+sim:/tb_FSM_Controller/Decrypt_Valid \
+sim:/tb_FSM_Controller/rst \
+sim:/tb_FSM_Controller/Init_Start \
+sim:/tb_FSM_Controller/Shuffle_A_Start \
+sim:/tb_FSM_Controller/Shuffle_B_Start \
+sim:/tb_FSM_Controller/Decrypt_Start \
+sim:/tb_FSM_Controller/Decrypt_done \
+sim:/tb_FSM_Controller/Key_Valid \
+sim:/tb_FSM_Controller/Mem_sel
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v(106)
+#    Time: 430 ps  Iteration: 0  Instance: /tb_FSM_Controller
+# Break in Module tb_FSM_Controller at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v line 106
+# Compile of tb_FSM_Controller.v was successful.
+# Compile of FSM_Controller.sv failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tb_FSM_Controller.v was successful.
+# Compile of FSM_Controller.sv failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tb_FSM_Controller.v was successful.
+# Compile of FSM_Controller.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Controller
+# End time: 20:51:43 on Jun 16,2025, Elapsed time: 0:13:39
+# Errors: 0, Warnings: 0
+# vsim work.tb_FSM_Controller 
+# Start time: 20:51:43 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Controller
+# Loading work.FSM_Controller
+# ** Warning: (vsim-3017) C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v(26): [TFMPC] - Too few port connections. Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_FSM_Controller/dut File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_Controller.sv
+# ** Warning: (vsim-3722) C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v(26): [TFMPC] - Missing connection for port 'states'.
+add wave -position insertpoint  \
+sim:/tb_FSM_Controller/clk \
+sim:/tb_FSM_Controller/Controller_Start \
+sim:/tb_FSM_Controller/Finish_ack \
+sim:/tb_FSM_Controller/Init_Finish \
+sim:/tb_FSM_Controller/Shuffle_A_Finish \
+sim:/tb_FSM_Controller/Shuffle_B_Finish \
+sim:/tb_FSM_Controller/Decrypt_Finish \
+sim:/tb_FSM_Controller/Decrypt_Valid \
+sim:/tb_FSM_Controller/rst \
+sim:/tb_FSM_Controller/Init_Start \
+sim:/tb_FSM_Controller/Shuffle_A_Start \
+sim:/tb_FSM_Controller/Shuffle_B_Start \
+sim:/tb_FSM_Controller/Decrypt_Start \
+sim:/tb_FSM_Controller/Decrypt_done \
+sim:/tb_FSM_Controller/Key_Valid \
+sim:/tb_FSM_Controller/Mem_sel
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v(106)
+#    Time: 430 ps  Iteration: 0  Instance: /tb_FSM_Controller
+# Break in Module tb_FSM_Controller at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v line 106
+# Compile of tb_FSM_Controller.v was successful.
+# Compile of FSM_Controller.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Controller
+# End time: 20:52:43 on Jun 16,2025, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 2
+# vsim work.tb_FSM_Controller 
+# Start time: 20:52:43 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Controller
+# Loading work.FSM_Controller
+# ** Warning: (vsim-3015) C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v(26): [PCDPC] - Port size (8) does not match connection size (1) for port 'states'. The port definition is at: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_Controller.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_FSM_Controller/dut File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_Controller.sv
+add wave -position insertpoint  \
+sim:/tb_FSM_Controller/clk \
+sim:/tb_FSM_Controller/Controller_Start \
+sim:/tb_FSM_Controller/Finish_ack \
+sim:/tb_FSM_Controller/Init_Finish \
+sim:/tb_FSM_Controller/Shuffle_A_Finish \
+sim:/tb_FSM_Controller/Shuffle_B_Finish \
+sim:/tb_FSM_Controller/Decrypt_Finish \
+sim:/tb_FSM_Controller/Decrypt_Valid \
+sim:/tb_FSM_Controller/rst \
+sim:/tb_FSM_Controller/state \
+sim:/tb_FSM_Controller/Init_Start \
+sim:/tb_FSM_Controller/Shuffle_A_Start \
+sim:/tb_FSM_Controller/Shuffle_B_Start \
+sim:/tb_FSM_Controller/Decrypt_Start \
+sim:/tb_FSM_Controller/Decrypt_done \
+sim:/tb_FSM_Controller/Key_Valid \
+sim:/tb_FSM_Controller/Mem_sel
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v(107)
+#    Time: 430 ps  Iteration: 0  Instance: /tb_FSM_Controller
+# Break in Module tb_FSM_Controller at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v line 107
+# Compile of tb_FSM_Controller.v was successful.
+# Compile of FSM_Controller.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Controller
+# End time: 20:53:30 on Jun 16,2025, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 1
+# vsim work.tb_FSM_Controller 
+# Start time: 20:53:30 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Controller
+# Loading work.FSM_Controller
+add wave -position insertpoint  \
+sim:/tb_FSM_Controller/clk \
+sim:/tb_FSM_Controller/Controller_Start \
+sim:/tb_FSM_Controller/Finish_ack \
+sim:/tb_FSM_Controller/Init_Finish \
+sim:/tb_FSM_Controller/Shuffle_A_Finish \
+sim:/tb_FSM_Controller/Shuffle_B_Finish \
+sim:/tb_FSM_Controller/Decrypt_Finish \
+sim:/tb_FSM_Controller/Decrypt_Valid \
+sim:/tb_FSM_Controller/rst \
+sim:/tb_FSM_Controller/state \
+sim:/tb_FSM_Controller/Init_Start \
+sim:/tb_FSM_Controller/Shuffle_A_Start \
+sim:/tb_FSM_Controller/Shuffle_B_Start \
+sim:/tb_FSM_Controller/Decrypt_Start \
+sim:/tb_FSM_Controller/Decrypt_done \
+sim:/tb_FSM_Controller/Key_Valid \
+sim:/tb_FSM_Controller/Mem_sel
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v(107)
+#    Time: 430 ps  Iteration: 0  Instance: /tb_FSM_Controller
+# Break in Module tb_FSM_Controller at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/tb_FSM_Controller.v line 107
+quit -sim
+# End time: 21:30:06 on Jun 16,2025, Elapsed time: 0:36:36
+# Errors: 0, Warnings: 0
+# reading C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project FSM_Get_Key_Sim
+# Compile of tb_FSM_Get_Key.v failed with 6 errors.
+# Compile of FSM_Get_Key.sv failed with 5 errors.
+# 2 compiles, 2 failed with 11 errors.
+# Compile of tb_FSM_Get_Key.v was successful.
+# Compile of FSM_Get_Key.sv failed with 5 errors.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of FSM_Get_Key.sv failed with 5 errors.
+# 1 compiles, 2 failed with 5 errors.
+# Compile of FSM_Get_Key.sv failed with 5 errors.
+# Compile of tb_FSM_Get_Key.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+vlog -sv FSM_Get_Key.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:51 on Jun 16,2025
+# vlog -reportprogress 300 -sv FSM_Get_Key.v 
+# ** Error: (vlog-7) Failed to open design unit file "FSM_Get_Key.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 21:34:51 on Jun 16,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/vlog failed.
+vlog -sv FSM_Get_Key.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:55 on Jun 16,2025
+# vlog -reportprogress 300 -sv FSM_Get_Key.sv 
+# -- Compiling module FSM_Get_Key
+# ** Error: FSM_Get_Key.sv(6): (vlog-2892) Net type of 'clk' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(7): (vlog-2892) Net type of 'rst' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(7): (vlog-2892) Net type of 'Crack_Start' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(9): (vlog-2892) Net type of 'Key_Valid' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(10): (vlog-2892) Net type of 'Checker_Finish' must be explicitly declared.
+# End time: 21:34:55 on Jun 16,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of FSM_Get_Key.sv failed with 5 errors.
+# Compile of tb_FSM_Get_Key.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+vlog -sv FSM_Get_Key.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:44 on Jun 16,2025
+# vlog -reportprogress 300 -sv FSM_Get_Key.sv 
+# -- Compiling module FSM_Get_Key
+# ** Error: FSM_Get_Key.sv(6): (vlog-2892) Net type of 'clk' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(7): (vlog-2892) Net type of 'rst' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(7): (vlog-2892) Net type of 'Crack_Start' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(9): (vlog-2892) Net type of 'Key_Valid' must be explicitly declared.
+# ** Error: FSM_Get_Key.sv(10): (vlog-2892) Net type of 'Checker_Finish' must be explicitly declared.
+# End time: 21:35:44 on Jun 16,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of FSM_Get_Key.sv was successful.
+# Compile of tb_FSM_Get_Key.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Get_Key
+# vsim work.tb_FSM_Get_Key 
+# Start time: 21:37:08 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Get_Key
+# Loading work.FSM_Get_Key
+add wave -position insertpoint  \
+sim:/tb_FSM_Get_Key/BEGIN_SEARCH \
+sim:/tb_FSM_Get_Key/END_SEARCH \
+sim:/tb_FSM_Get_Key/clk \
+sim:/tb_FSM_Get_Key/rst \
+sim:/tb_FSM_Get_Key/Crack_Start \
+sim:/tb_FSM_Get_Key/Key_Valid \
+sim:/tb_FSM_Get_Key/Checker_Finish \
+sim:/tb_FSM_Get_Key/Secret_Key \
+sim:/tb_FSM_Get_Key/Check_Ack \
+sim:/tb_FSM_Get_Key/Control_Start \
+sim:/tb_FSM_Get_Key/Valid_Key_Found \
+sim:/tb_FSM_Get_Key/LEDR
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Get_Key/tb_FSM_Get_Key.sv(76)
+#    Time: 480 ps  Iteration: 0  Instance: /tb_FSM_Get_Key
+# Break in Module tb_FSM_Get_Key at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Get_Key/tb_FSM_Get_Key.sv line 76
+# Compile of FSM_Get_Key.sv was successful.
+# Compile of tb_FSM_Get_Key.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Get_Key
+# End time: 21:41:57 on Jun 16,2025, Elapsed time: 0:04:49
+# Errors: 0, Warnings: 0
+# vsim work.tb_FSM_Get_Key 
+# Start time: 21:41:57 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Get_Key
+# Loading work.FSM_Get_Key
+add wave -position insertpoint  \
+sim:/tb_FSM_Get_Key/clk \
+sim:/tb_FSM_Get_Key/rst \
+sim:/tb_FSM_Get_Key/Crack_Start \
+sim:/tb_FSM_Get_Key/Key_Valid \
+sim:/tb_FSM_Get_Key/Checker_Finish \
+sim:/tb_FSM_Get_Key/Secret_Key \
+sim:/tb_FSM_Get_Key/Check_Ack \
+sim:/tb_FSM_Get_Key/Control_Start \
+sim:/tb_FSM_Get_Key/Valid_Key_Found \
+sim:/tb_FSM_Get_Key/LEDR
+run -continue
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Get_Key/tb_FSM_Get_Key.sv(76)
+#    Time: 600 ps  Iteration: 0  Instance: /tb_FSM_Get_Key
+# Break in Module tb_FSM_Get_Key at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Get_Key/tb_FSM_Get_Key.sv line 76
+quit -sim
+# End time: 22:03:20 on Jun 16,2025, Elapsed time: 0:21:23
+# Errors: 0, Warnings: 0
+# reading C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project FSM_Init_sim
+# Compile of FSM_Init.sv was successful.
+# Compile of tb_FSM_Init.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Init
+# vsim work.tb_FSM_Init 
+# Start time: 22:04:00 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Init
+# Loading work.FSM_Init
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/tb_FSM_Init/CLOCK_50 \
+sim:/tb_FSM_Init/rst \
+sim:/tb_FSM_Init/In_Start \
+sim:/tb_FSM_Init/Finish_ack \
+sim:/tb_FSM_Init/Init_Finish \
+sim:/tb_FSM_Init/Address \
+sim:/tb_FSM_Init/wren
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Init/tb_FSM_Init.sv(55)
+#    Time: 15570 ps  Iteration: 0  Instance: /tb_FSM_Init
+# Break in Module tb_FSM_Init at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Init/tb_FSM_Init.sv line 55
+# End time: 22:18:48 on Jun 16,2025, Elapsed time: 0:14:48
+# Errors: 1, Warnings: 0
+# Closing project C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Init/FSM_Init_sim.mpf
+# reading C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project FSM_Shuffler_Sim
+# Compile of FSM_Shuffler.sv failed with 4 errors.
+# Compile of tb_FSM_Shuffler.sv failed with 1 errors.
+# 2 compiles, 2 failed with 5 errors.
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of FSM_Shuffler.sv failed with 1 errors.
+# Compile of tb_FSM_Shuffler.sv failed with 1 errors.
+# 2 compiles, 2 failed with 2 errors.
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Shuffler
+# vsim work.tb_FSM_Shuffler 
+# Start time: 22:24:30 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Shuffler
+# Loading work.FSM_Shuffler
+# ** Error: (vsim-3063) C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv(19): Port 'state' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_FSM_Shuffler/dut File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv
+# Error loading design
+# End time: 22:24:30 on Jun 16,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Shuffler
+# vsim work.tb_FSM_Shuffler 
+# Start time: 22:24:49 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Shuffler
+# Loading work.FSM_Shuffler
+# ** Warning: (vsim-3015) C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv(19): [PCDPC] - Port size (6) does not match connection size (1) for port 'states'. The port definition is at: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_FSM_Shuffler/dut File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv
+add wave -position insertpoint  \
+sim:/tb_FSM_Shuffler/clk \
+sim:/tb_FSM_Shuffler/rst \
+sim:/tb_FSM_Shuffler/Secret_Key \
+sim:/tb_FSM_Shuffler/In_Start \
+sim:/tb_FSM_Shuffler/q \
+sim:/tb_FSM_Shuffler/Finish_ack \
+sim:/tb_FSM_Shuffler/states \
+sim:/tb_FSM_Shuffler/data \
+sim:/tb_FSM_Shuffler/Address \
+sim:/tb_FSM_Shuffler/Init_Finish \
+sim:/tb_FSM_Shuffler/wren
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv(75)
+#    Time: 785 ps  Iteration: 0  Instance: /tb_FSM_Shuffler
+# Break in Module tb_FSM_Shuffler at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv line 75
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Shuffler
+# End time: 22:26:35 on Jun 16,2025, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 1
+# vsim work.tb_FSM_Shuffler 
+# Start time: 22:26:35 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Shuffler
+# Loading work.FSM_Shuffler
+# ** Warning: (vsim-3015) C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv(19): [PCDPC] - Port size (6) does not match connection size (8) for port 'states'. The port definition is at: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_FSM_Shuffler/dut File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv
+add wave -position insertpoint  \
+sim:/tb_FSM_Shuffler/clk \
+sim:/tb_FSM_Shuffler/rst \
+sim:/tb_FSM_Shuffler/Secret_Key \
+sim:/tb_FSM_Shuffler/In_Start \
+sim:/tb_FSM_Shuffler/q \
+sim:/tb_FSM_Shuffler/Finish_ack \
+sim:/tb_FSM_Shuffler/states \
+sim:/tb_FSM_Shuffler/data \
+sim:/tb_FSM_Shuffler/Address \
+sim:/tb_FSM_Shuffler/Init_Finish \
+sim:/tb_FSM_Shuffler/wren
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv(75)
+#    Time: 785 ps  Iteration: 0  Instance: /tb_FSM_Shuffler
+# Break in Module tb_FSM_Shuffler at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv line 75
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of FSM_Shuffler.sv was successful.
+# Compile of tb_FSM_Shuffler.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Shuffler
+# End time: 22:27:10 on Jun 16,2025, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 1
+# vsim work.tb_FSM_Shuffler 
+# Start time: 22:27:10 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Shuffler
+# Loading work.FSM_Shuffler
+add wave -position insertpoint  \
+sim:/tb_FSM_Shuffler/clk \
+sim:/tb_FSM_Shuffler/rst \
+sim:/tb_FSM_Shuffler/Secret_Key \
+sim:/tb_FSM_Shuffler/In_Start \
+sim:/tb_FSM_Shuffler/q \
+sim:/tb_FSM_Shuffler/Finish_ack \
+sim:/tb_FSM_Shuffler/states \
+sim:/tb_FSM_Shuffler/data \
+sim:/tb_FSM_Shuffler/Address \
+sim:/tb_FSM_Shuffler/Init_Finish \
+sim:/tb_FSM_Shuffler/wren
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv(75)
+#    Time: 785 ps  Iteration: 0  Instance: /tb_FSM_Shuffler
+# Break in Module tb_FSM_Shuffler at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/tb_FSM_Shuffler.sv line 75
+quit -sim
+# End time: 23:47:45 on Jun 16,2025, Elapsed time: 1:20:35
+# Errors: 0, Warnings: 0
+# Compile of FSM_Shuffler.sv failed with 6 errors.
+# Compile of tb_FSM_Shuffler.sv failed with 1 errors.
+# 2 compiles, 2 failed with 7 errors.
+# reading C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project FSM_Shuffler_B_sim
+# Compile of tb_FSM_Shuffler_B.sv was successful.
+# Compile of FSM_Shuffler_B.sv failed with 7 errors.
+# 2 compiles, 1 failed with 7 errors.
+# Compile of tb_FSM_Shuffler_B.sv was successful.
+# Compile of FSM_Shuffler_B.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Shuffler_B
+# vsim work.tb_FSM_Shuffler_B 
+# Start time: 23:49:11 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Shuffler_B
+# Loading work.FSM_Shuffler_B
+add wave -position insertpoint  \
+sim:/tb_FSM_Shuffler_B/clk \
+sim:/tb_FSM_Shuffler_B/rst \
+sim:/tb_FSM_Shuffler_B/Shuffle_B_Start \
+sim:/tb_FSM_Shuffler_B/Finish_ack \
+sim:/tb_FSM_Shuffler_B/Shuffle_B_Finish \
+sim:/tb_FSM_Shuffler_B/wren_S \
+sim:/tb_FSM_Shuffler_B/wren_D \
+sim:/tb_FSM_Shuffler_B/q_S \
+sim:/tb_FSM_Shuffler_B/data_S \
+sim:/tb_FSM_Shuffler_B/Address_S \
+sim:/tb_FSM_Shuffler_B/q_D \
+sim:/tb_FSM_Shuffler_B/data_D \
+sim:/tb_FSM_Shuffler_B/Address_D \
+sim:/tb_FSM_Shuffler_B/q_C \
+sim:/tb_FSM_Shuffler_B/Address_C
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/tb_FSM_Shuffler_B.sv(77)
+#    Time: 592 ps  Iteration: 0  Instance: /tb_FSM_Shuffler_B
+# Break in Module tb_FSM_Shuffler_B at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/tb_FSM_Shuffler_B.sv line 77
+# Compile of tb_FSM_Shuffler_B.sv was successful.
+# Compile of FSM_Shuffler_B.sv failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tb_FSM_Shuffler_B.sv was successful.
+# Compile of FSM_Shuffler_B.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of tb_FSM_Shuffler_B.sv was successful.
+# Compile of FSM_Shuffler_B.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of tb_FSM_Shuffler_B.sv was successful.
+# Compile of FSM_Shuffler_B.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_FSM_Shuffler_B
+# End time: 23:52:48 on Jun 16,2025, Elapsed time: 0:03:37
+# Errors: 0, Warnings: 0
+# vsim work.tb_FSM_Shuffler_B 
+# Start time: 23:52:48 on Jun 16,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Shuffler_B
+# Loading work.FSM_Shuffler_B
+add wave -position insertpoint  \
+sim:/tb_FSM_Shuffler_B/clk \
+sim:/tb_FSM_Shuffler_B/rst \
+sim:/tb_FSM_Shuffler_B/Shuffle_B_Start \
+sim:/tb_FSM_Shuffler_B/Finish_ack \
+sim:/tb_FSM_Shuffler_B/Shuffle_B_Finish \
+sim:/tb_FSM_Shuffler_B/wren_S \
+sim:/tb_FSM_Shuffler_B/wren_D \
+sim:/tb_FSM_Shuffler_B/q_S \
+sim:/tb_FSM_Shuffler_B/data_S \
+sim:/tb_FSM_Shuffler_B/Address_S \
+sim:/tb_FSM_Shuffler_B/q_D \
+sim:/tb_FSM_Shuffler_B/data_D \
+sim:/tb_FSM_Shuffler_B/Address_D \
+sim:/tb_FSM_Shuffler_B/q_C \
+sim:/tb_FSM_Shuffler_B/Address_C \
+sim:/tb_FSM_Shuffler_B/state
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/tb_FSM_Shuffler_B.sv(80)
+#    Time: 592 ps  Iteration: 0  Instance: /tb_FSM_Shuffler_B
+# Break in Module tb_FSM_Shuffler_B at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/tb_FSM_Shuffler_B.sv line 80
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Break key hit
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Break key hit
+# WARNING: No extended dataflow license exists
+vsim work.tb_FSM_Shuffler_B
+# End time: 00:00:12 on Jun 17,2025, Elapsed time: 0:07:24
+# Errors: 9, Warnings: 4
+# vsim work.tb_FSM_Shuffler_B 
+# Start time: 00:00:12 on Jun 17,2025
+# Loading sv_std.std
+# Loading work.tb_FSM_Shuffler_B
+# Loading work.FSM_Shuffler_B
+add wave -position insertpoint  \
+sim:/tb_FSM_Shuffler_B/clk \
+sim:/tb_FSM_Shuffler_B/rst \
+sim:/tb_FSM_Shuffler_B/Shuffle_B_Start \
+sim:/tb_FSM_Shuffler_B/Finish_ack \
+sim:/tb_FSM_Shuffler_B/Shuffle_B_Finish \
+sim:/tb_FSM_Shuffler_B/wren_S \
+sim:/tb_FSM_Shuffler_B/wren_D \
+sim:/tb_FSM_Shuffler_B/q_S \
+sim:/tb_FSM_Shuffler_B/data_S \
+sim:/tb_FSM_Shuffler_B/Address_S \
+sim:/tb_FSM_Shuffler_B/q_D \
+sim:/tb_FSM_Shuffler_B/data_D \
+sim:/tb_FSM_Shuffler_B/Address_D \
+sim:/tb_FSM_Shuffler_B/q_C \
+sim:/tb_FSM_Shuffler_B/Address_C \
+sim:/tb_FSM_Shuffler_B/state
+run -all
+# ** Note: $stop    : C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/tb_FSM_Shuffler_B.sv(80)
+#    Time: 592 ps  Iteration: 0  Instance: /tb_FSM_Shuffler_B
+# Break in Module tb_FSM_Shuffler_B at C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/tb_FSM_Shuffler_B.sv line 80
+# WARNING: No extended dataflow license exists
+# End time: 00:34:03 on Jun 17,2025, Elapsed time: 0:33:51
+# Errors: 0, Warnings: 1

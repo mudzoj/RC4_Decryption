@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for rc4
-Sun Jun 15 19:26:51 2025
+Tue Jun 17 01:33:16 2025
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -100,29 +100,29 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
+; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 2.07        ;
+; Average used               ; 2.04        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   8.3%      ;
-;     Processor 3            ;   8.2%      ;
-;     Processor 4            ;   8.1%      ;
-;     Processor 5            ;   6.9%      ;
-;     Processor 6            ;   6.9%      ;
-;     Processor 7            ;   6.9%      ;
-;     Processor 8            ;   6.8%      ;
-;     Processor 9            ;   6.8%      ;
-;     Processor 10           ;   6.8%      ;
-;     Processor 11           ;   6.8%      ;
-;     Processor 12           ;   6.8%      ;
-;     Processor 13           ;   6.8%      ;
-;     Processor 14           ;   6.8%      ;
-;     Processor 15           ;   6.8%      ;
-;     Processor 16           ;   6.8%      ;
+;     Processor 2            ;   7.9%      ;
+;     Processor 3            ;   7.8%      ;
+;     Processor 4            ;   7.7%      ;
+;     Processor 5            ;   6.7%      ;
+;     Processor 6            ;   6.7%      ;
+;     Processor 7            ;   6.7%      ;
+;     Processor 8            ;   6.7%      ;
+;     Processor 9            ;   6.7%      ;
+;     Processor 10           ;   6.7%      ;
+;     Processor 11           ;   6.7%      ;
+;     Processor 12           ;   6.7%      ;
+;     Processor 13           ;   6.7%      ;
+;     Processor 14           ;   6.7%      ;
+;     Processor 15           ;   6.7%      ;
+;     Processor 16           ;   6.7%      ;
 +----------------------------+-------------+
 
 
@@ -131,7 +131,7 @@ agreement for further details.
 +------------------------+--------+--------------------------+
 ; SDC File Path          ; Status ; Read at                  ;
 +------------------------+--------+--------------------------+
-; timing_constraints.sdc ; OK     ; Sun Jun 15 19:26:43 2025 ;
+; timing_constraints.sdc ; OK     ; Tue Jun 17 01:32:49 2025 ;
 +------------------------+--------+--------------------------+
 
 
@@ -972,11 +972,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Sun Jun 15 19:26:42 2025
+    Info: Processing started: Tue Jun 17 01:32:44 2025
 Info: Command: quartus_sta rc4 -c rc4
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332164): Evaluating HDL-embedded SDC commands
@@ -1103,9 +1103,9 @@ Info (332146): Worst-case minimum pulse width slack is 8.387
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 5376 megabytes
-    Info: Processing ended: Sun Jun 15 19:26:51 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 5370 megabytes
+    Info: Processing ended: Tue Jun 17 01:33:16 2025
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:48
 
 

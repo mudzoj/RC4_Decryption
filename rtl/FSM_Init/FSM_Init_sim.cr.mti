@@ -1,0 +1,8 @@
+C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Init/tb_FSM_Init.sv {1 {vlog -work work -sv -stats=none C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Init/tb_FSM_Init.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_FSM_Init
+
+Top level modules:
+	tb_FSM_Init
+
+} {} {}}

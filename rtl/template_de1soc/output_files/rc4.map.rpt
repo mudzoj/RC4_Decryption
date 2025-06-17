@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rc4
-Sun Jun 15 19:24:25 2025
+Tue Jun 17 01:26:59 2025
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -104,7 +104,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jun 15 19:24:25 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 17 01:26:58 2025       ;
 ; Quartus Prime Version           ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                   ; rc4                                         ;
 ; Top-level Entity Name           ; ksa                                         ;
@@ -226,7 +226,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
+; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -241,71 +241,64 @@ agreement for further details.
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
-;     Processor 9            ;   0.0%      ;
-;     Processor 10           ;   0.0%      ;
-;     Processor 11           ;   0.0%      ;
-;     Processor 12           ;   0.0%      ;
-;     Processor 13           ;   0.0%      ;
-;     Processor 14           ;   0.0%      ;
-;     Processor 15           ;   0.0%      ;
-;     Processor 16           ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                    ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                          ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; s_memory.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/s_memory.v                                                         ;             ;
-; ../FSM_Init/FSM_Init.sv                                            ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Init/FSM_Init.sv                                                               ;             ;
-; ../FSM_Controller+FSM_MUX/FSM_Controller.sv                        ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_Controller.sv                                           ;             ;
-; ../FSM_Controller+FSM_MUX/FSM_MUX.sv                               ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_MUX.sv                                                  ;             ;
-; ../FSM_Shuffler/FSM_Shuffler.sv                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv                                                       ;             ;
-; ROM_C_memory.v                                                     ; yes             ; User Wizard-Generated File                   ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v                                                     ;             ;
-; d_memory.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/d_memory.v                                                         ;             ;
-; ../FSM_Shuffler_B/FSM_Shuffler_B.sv                                ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler_B/FSM_Shuffler_B.sv                                                   ;             ;
-; ../FSM_Checker/FSM_Checker.sv                                      ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Checker/FSM_Checker.sv                                                         ;             ;
-; ksa.sv                                                             ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv                                                             ;             ;
-; ../FSM_Get_Key/FSM_Get_Key.sv                                      ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Get_Key/FSM_Get_Key.sv                                                         ;             ;
-; ../Cracking_RC4/Cracking_RC4.sv                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv                                                       ;             ;
-; ../Cracking_RC4/Key_Selecter.sv                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Key_Selecter.sv                                                       ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                 ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                          ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                    ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                 ;             ;
-; aglobal161.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                                                                 ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                  ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altrom.inc                                                                     ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altram.inc                                                                     ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altdpram.inc                                                                   ;             ;
-; db/altsyncram_2d32.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf                                             ;             ;
-; db/altsyncram_dsp2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_dsp2.tdf                                             ;             ;
-; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                            ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                  ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                              ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                 ;             ;
-; db/altsyncram_lbt1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf                                             ;             ;
-; db/altsyncram_31v2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_31v2.tdf                                             ;             ;
-; ../message.mif                                                     ; yes             ; Auto-Found Memory Initialization File        ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/message.mif                                                        ;             ;
-; db/altsyncram_oa32.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf                                             ;             ;
-; db/altsyncram_nop2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_nop2.tdf                                             ;             ;
-; sevensegmentdisplaydecoder.v                                       ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/sevensegmentdisplaydecoder.v                                       ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                    ; altera_sld  ;
-; db/ip/sld73f98f60/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                               ;             ;
-; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                                 ;             ;
-; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc                                                                ;             ;
-; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                            ;             ;
-; db/lpm_divide_62m.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/lpm_divide_62m.tdf                                              ;             ;
-; db/sign_div_unsign_9kh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/sign_div_unsign_9kh.tdf                                         ;             ;
-; db/alt_u_div_ose.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/alt_u_div_ose.tdf                                               ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                   ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                         ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; s_memory.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/s_memory.v                                                         ;             ;
+; ../FSM_Init/FSM_Init.sv                                            ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Init/FSM_Init.sv                                                               ;             ;
+; ../FSM_Controller+FSM_MUX/FSM_Controller.sv                        ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_Controller.sv                                           ;             ;
+; ../FSM_Controller+FSM_MUX/FSM_MUX.sv                               ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_MUX.sv                                                  ;             ;
+; ../FSM_Shuffler/FSM_Shuffler.sv                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv                                                       ;             ;
+; ROM_C_memory.v                                                     ; yes             ; User Wizard-Generated File                   ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v                                                     ;             ;
+; d_memory.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/d_memory.v                                                         ;             ;
+; ../FSM_Shuffler_B/FSM_Shuffler_B.sv                                ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/FSM_Shuffler_B.sv                                                   ;             ;
+; ../FSM_Checker/FSM_Checker.sv                                      ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Checker/FSM_Checker.sv                                                         ;             ;
+; ksa.sv                                                             ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv                                                             ;             ;
+; ../FSM_Get_Key/FSM_Get_Key.sv                                      ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Get_Key/FSM_Get_Key.sv                                                         ;             ;
+; ../Cracking_RC4/Cracking_RC4.sv                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv                                                       ;             ;
+; ../Cracking_RC4/Key_Selecter.sv                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Key_Selecter.sv                                                       ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                         ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                   ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                ;             ;
+; aglobal161.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                                                                ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                 ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altrom.inc                                                                    ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altram.inc                                                                    ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altdpram.inc                                                                  ;             ;
+; db/altsyncram_2d32.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf                                             ;             ;
+; db/altsyncram_dsp2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_dsp2.tdf                                             ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                           ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                 ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                             ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                ;             ;
+; db/altsyncram_lbt1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf                                             ;             ;
+; db/altsyncram_31v2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_31v2.tdf                                             ;             ;
+; ../message.mif                                                     ; yes             ; Auto-Found Memory Initialization File        ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/message.mif                                                        ;             ;
+; db/altsyncram_oa32.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf                                             ;             ;
+; db/altsyncram_nop2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_nop2.tdf                                             ;             ;
+; sevensegmentdisplaydecoder.v                                       ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/sevensegmentdisplaydecoder.v                                       ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                   ; altera_sld  ;
+; db/ip/sld73f98f60/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                              ;             ;
+; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                                ;             ;
+; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc                                                               ;             ;
+; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                           ;             ;
+; db/lpm_divide_62m.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/lpm_divide_62m.tdf                                              ;             ;
+; db/sign_div_unsign_9kh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/sign_div_unsign_9kh.tdf                                         ;             ;
+; db/alt_u_div_ose.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/alt_u_div_ose.tdf                                               ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------+
@@ -2080,7 +2073,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -2090,53 +2083,53 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Sun Jun 15 19:24:05 2025
+    Info: Processing started: Tue Jun 17 01:25:52 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rc4 -c rc4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file s_memory.v
-    Info (12023): Found entity 1: s_memory File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/fsm_init/fsm_init.sv
-    Info (12023): Found entity 1: FSM_Init File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Init/FSM_Init.sv Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/fsm_controller+fsm_mux/fsm_controller.sv
-    Info (12023): Found entity 1: FSM_Controller File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_Controller.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/fsm_controller+fsm_mux/fsm_mux.sv
-    Info (12023): Found entity 1: FSM_MUX File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_MUX.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/fsm_shuffler/fsm_shuffler.sv
-    Info (12023): Found entity 1: FSM_Shuffler File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 3
+    Info (12023): Found entity 1: s_memory File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/fsm_init/fsm_init.sv
+    Info (12023): Found entity 1: FSM_Init File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Init/FSM_Init.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/fsm_controller+fsm_mux/fsm_controller.sv
+    Info (12023): Found entity 1: FSM_Controller File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_Controller.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/fsm_controller+fsm_mux/fsm_mux.sv
+    Info (12023): Found entity 1: FSM_MUX File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Controller+FSM_MUX/FSM_MUX.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/fsm_shuffler/fsm_shuffler.sv
+    Info (12023): Found entity 1: FSM_Shuffler File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file rom_c_memory.v
-    Info (12023): Found entity 1: ROM_C_memory File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 40
+    Info (12023): Found entity 1: ROM_C_memory File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file d_memory.v
-    Info (12023): Found entity 1: d_memory File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/fsm_shuffler_b/fsm_shuffler_b.sv
-    Info (12023): Found entity 1: FSM_Shuffler_B File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler_B/FSM_Shuffler_B.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/fsm_checker/fsm_checker.sv
-    Info (12023): Found entity 1: FSM_Checker File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Checker/FSM_Checker.sv Line: 2
-Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(35): ignored dangling comma in List of Port Connections File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 35
-Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(49): ignored dangling comma in List of Port Connections File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 49
-Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(63): ignored dangling comma in List of Port Connections File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 63
-Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(77): ignored dangling comma in List of Port Connections File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 77
+    Info (12023): Found entity 1: d_memory File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/fsm_shuffler_b/fsm_shuffler_b.sv
+    Info (12023): Found entity 1: FSM_Shuffler_B File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/FSM_Shuffler_B.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/fsm_checker/fsm_checker.sv
+    Info (12023): Found entity 1: FSM_Checker File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Checker/FSM_Checker.sv Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(35): ignored dangling comma in List of Port Connections File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 35
+Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(49): ignored dangling comma in List of Port Connections File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 49
+Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(63): ignored dangling comma in List of Port Connections File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 63
+Warning (10275): Verilog HDL Module Instantiation warning at ksa.sv(77): ignored dangling comma in List of Port Connections File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 77
 Info (12021): Found 1 design units, including 1 entities, in source file ksa.sv
-    Info (12023): Found entity 1: ksa File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/fsm_get_key/fsm_get_key.sv
-    Info (12023): Found entity 1: FSM_Get_Key File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Get_Key/FSM_Get_Key.sv Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/cracking_rc4/cracking_rc4.sv
-    Info (12023): Found entity 1: Cracking_RC4 File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /users/megaa/documents/github/rc4_decryption/rtl/cracking_rc4/key_selecter.sv
-    Info (12023): Found entity 1: Key_Selecter File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Key_Selecter.sv Line: 1
+    Info (12023): Found entity 1: ksa File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/fsm_get_key/fsm_get_key.sv
+    Info (12023): Found entity 1: FSM_Get_Key File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Get_Key/FSM_Get_Key.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/cracking_rc4/cracking_rc4.sv
+    Info (12023): Found entity 1: Cracking_RC4 File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mudzo/desktop/cpen311/rc4_decryption/rtl/cracking_rc4/key_selecter.sv
+    Info (12023): Found entity 1: Key_Selecter File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Key_Selecter.sv Line: 1
 Info (12127): Elaborating entity "ksa" for the top level hierarchy
-Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core1" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 35
-Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
-Info (12128): Elaborating entity "FSM_Controller" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Controller:FSM_ksa_Controller" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 52
-Info (12128): Elaborating entity "FSM_Init" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Init:FSM_Initialiser" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 67
-Info (12128): Elaborating entity "FSM_Shuffler" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 87
-Warning (10036): Verilog HDL or VHDL warning at FSM_Shuffler.sv(48): object "j_data" assigned a value but never read File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 48
-Warning (10230): Verilog HDL assignment warning at FSM_Shuffler.sv(95): truncated value with size 32 to match size of target (8) File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
-Info (12128): Elaborating entity "FSM_MUX" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_MUX:FSM_MEM_MUX" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 124
-Info (12128): Elaborating entity "s_memory" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 133
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 86
-Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 86
-Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 86
+Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core1" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 35
+Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
+Info (12128): Elaborating entity "FSM_Controller" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Controller:FSM_ksa_Controller" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 52
+Info (12128): Elaborating entity "FSM_Init" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Init:FSM_Initialiser" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 67
+Info (12128): Elaborating entity "FSM_Shuffler" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 87
+Warning (10036): Verilog HDL or VHDL warning at FSM_Shuffler.sv(48): object "j_data" assigned a value but never read File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 48
+Warning (10230): Verilog HDL assignment warning at FSM_Shuffler.sv(95): truncated value with size 32 to match size of target (8) File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
+Info (12128): Elaborating entity "FSM_MUX" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_MUX:FSM_MEM_MUX" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 124
+Info (12128): Elaborating entity "s_memory" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 133
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 86
+Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 86
+Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/s_memory.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
@@ -2153,14 +2146,14 @@ Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|s_memor
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2d32.tdf
-    Info (12023): Found entity 1: altsyncram_2d32 File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_2d32 File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_2d32" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dsp2.tdf
-    Info (12023): Found entity 1: altsyncram_dsp2 File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_dsp2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_dsp2" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 37
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 38
-Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 38
-Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 38
+    Info (12023): Found entity 1: altsyncram_dsp2 File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_dsp2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_dsp2" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|altsyncram_dsp2:altsyncram1" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 37
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 38
+Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 38
+Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_2d32.tdf Line: 38
     Info (12134): Parameter "CVALUE" = "00000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -2172,12 +2165,12 @@ Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|s_memor
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|s_memory:s_memory_working|altsyncram:altsyncram_component|altsyncram_2d32:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
-Info (12128): Elaborating entity "FSM_Shuffler_B" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler_B:FSM_Shuffle_B" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 165
-Warning (10230): Verilog HDL assignment warning at FSM_Shuffler_B.sv(78): truncated value with size 8 to match size of target (5) File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler_B/FSM_Shuffler_B.sv Line: 78
-Info (12128): Elaborating entity "ROM_C_memory" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 175
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 82
-Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 82
-Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 82
+Info (12128): Elaborating entity "FSM_Shuffler_B" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler_B:FSM_Shuffle_B" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 165
+Warning (10230): Verilog HDL assignment warning at FSM_Shuffler_B.sv(78): truncated value with size 8 to match size of target (5) File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler_B/FSM_Shuffler_B.sv Line: 78
+Info (12128): Elaborating entity "ROM_C_memory" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 175
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 82
+Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 82
+Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ROM_C_memory.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2194,14 +2187,14 @@ Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|ROM_C_m
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lbt1.tdf
-    Info (12023): Found entity 1: altsyncram_lbt1 File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_lbt1 File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_lbt1" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_31v2.tdf
-    Info (12023): Found entity 1: altsyncram_31v2 File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_31v2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_31v2" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|altsyncram_31v2:altsyncram1" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 35
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 36
-Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 36
-Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 36
+    Info (12023): Found entity 1: altsyncram_31v2 File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_31v2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_31v2" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|altsyncram_31v2:altsyncram1" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 35
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 36
+Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 36
+Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|ROM_C_memory:ROM_msg_C_memory|altsyncram:altsyncram_component|altsyncram_lbt1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_lbt1.tdf Line: 36
     Info (12134): Parameter "CVALUE" = "00000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -2210,10 +2203,10 @@ Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|ROM_C_m
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
     Info (12134): Parameter "WIDTH_WORD" = "8"
     Info (12134): Parameter "WIDTHAD" = "5"
-Info (12128): Elaborating entity "d_memory" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 187
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 86
-Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 86
-Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 86
+Info (12128): Elaborating entity "d_memory" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 187
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 86
+Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 86
+Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/d_memory.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
@@ -2230,14 +2223,14 @@ Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|d_memor
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oa32.tdf
-    Info (12023): Found entity 1: altsyncram_oa32 File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_oa32 File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_oa32" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nop2.tdf
-    Info (12023): Found entity 1: altsyncram_nop2 File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_nop2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_nop2" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 37
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 38
-Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 38
-Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 38
+    Info (12023): Found entity 1: altsyncram_nop2 File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_nop2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_nop2" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|altsyncram_nop2:altsyncram1" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 37
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 38
+Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 38
+Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|d_memory:d_memory_msg|altsyncram:altsyncram_component|altsyncram_oa32:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/altsyncram_oa32.tdf Line: 38
     Info (12134): Parameter "CVALUE" = "00000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -2246,19 +2239,19 @@ Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|d_memor
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
     Info (12134): Parameter "WIDTH_WORD" = "8"
     Info (12134): Parameter "WIDTHAD" = "5"
-Info (12128): Elaborating entity "FSM_Checker" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Checker:FSM_Checker" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 206
-Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core2" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 49
-Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core2|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
-Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core3" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 63
-Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core3|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
-Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core4" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 77
-Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core4|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
-Info (12128): Elaborating entity "Key_Selecter" for hierarchy "Key_Selecter:key_sel_u" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 100
+Info (12128): Elaborating entity "FSM_Checker" for hierarchy "Cracking_RC4:Cracking_RC4_Core1|FSM_Checker:FSM_Checker" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 206
+Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core2" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 49
+Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core2|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
+Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core3" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 63
+Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core3|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
+Info (12128): Elaborating entity "Cracking_RC4" for hierarchy "Cracking_RC4:Cracking_RC4_Core4" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 77
+Info (12128): Elaborating entity "FSM_Get_Key" for hierarchy "Cracking_RC4:Cracking_RC4_Core4|FSM_Get_Key:Get_Next_Secret_Key" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/Cracking_RC4/Cracking_RC4.sv Line: 41
+Info (12128): Elaborating entity "Key_Selecter" for hierarchy "Key_Selecter:key_sel_u" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 100
 Warning (12125): Using design file sevensegmentdisplaydecoder.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: SevenSegmentDisplayDecoder File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/sevensegmentdisplaydecoder.v Line: 1
-Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:decoder0" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 106
+    Info (12023): Found entity 1: SevenSegmentDisplayDecoder File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/sevensegmentdisplaydecoder.v Line: 1
+Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:decoder0" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 106
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2025.06.15.19:24:14 Progress: Loading sld73f98f60/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2025.06.17.01:26:25 Progress: Loading sld73f98f60/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2269,86 +2262,86 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld73f98f60/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 542
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 542
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/ip/sld73f98f60/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (278001): Inferred 4 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core2|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core3|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core4|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
-Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle|lpm_divide:Mod0" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
-Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle|lpm_divide:Mod0" with the following parameter: File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core2|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core3|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Cracking_RC4:Cracking_RC4_Core4|FSM_Shuffler:FSM_Shuffle|Mod0" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
+Info (12130): Elaborated megafunction instantiation "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle|lpm_divide:Mod0" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
+Info (12133): Instantiated megafunction "Cracking_RC4:Cracking_RC4_Core1|FSM_Shuffler:FSM_Shuffle|lpm_divide:Mod0" with the following parameter: File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/FSM_Shuffler/FSM_Shuffler.sv Line: 95
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "2"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_62m.tdf
-    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/lpm_divide_62m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/lpm_divide_62m.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/sign_div_unsign_9kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/sign_div_unsign_9kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ose.tdf
-    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/db/alt_u_div_ose.tdf Line: 23
+    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/db/alt_u_div_ose.tdf Line: 23
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 8
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 8
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 15
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 8
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 8
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 15
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (144001): Generated suppressed messages file C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/output_files/rc4.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/output_files/rc4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (15752): Ignored 12 Virtual Pin logic option assignments
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[7]".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[3]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[2]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_RS".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_EN".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[0]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[1]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[5]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_ON".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[2]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[7]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[1]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_RS".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[0]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_EN".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[5]".
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 6
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 6
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 6
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 6
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 6
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 6
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/ksa.sv Line: 7
 Info (21057): Implemented 3291 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 53 output pins
     Info (21061): Implemented 3123 logic cells
     Info (21064): Implemented 96 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 5006 megabytes
-    Info: Processing ended: Sun Jun 15 19:24:25 2025
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 5016 megabytes
+    Info: Processing ended: Tue Jun 17 01:26:59 2025
+    Info: Elapsed time: 00:01:07
+    Info: Total CPU time (on all processors): 00:01:46
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/megaa/Documents/github/RC4_Decryption/rtl/template_de1soc/output_files/rc4.map.smsg.
+The suppressed messages can be found in C:/Users/mudzo/Desktop/CPEN311/RC4_Decryption/rtl/template_de1soc/output_files/rc4.map.smsg.
 
 
